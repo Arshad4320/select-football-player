@@ -17,3 +17,31 @@ h1.hadding-title {
     font-weight: 600;
     color: tomato;
 }
+
+.card-section {
+    background: #090b4d;
+    padding: 100px;
+}
+
+.card-style {
+    background-color: #010213;
+    color: white;
+}
+
+.card-style {
+    padding: 30px;
+}
+
+.list ul li {
+    list-style: none;
+    padding-top: 26px;
+}
+
+input {
+    width: 120px;
+    margin-left: 20px;
+    background: none;
+    border: 1px solid gray;
+}
+
+.btn {}
