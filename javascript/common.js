@@ -4,7 +4,7 @@ document.getElementById('player-button-one').addEventListener('click', function 
     const li = document.createElement('li');
     li.innerText = 'Lionel Messi'
     listContent.append(li);
-    onClick = this.disabled = true;
+
 })
 document.getElementById('player-button-tow').addEventListener('click', function () {
     const listContent = document.getElementById('list-content');

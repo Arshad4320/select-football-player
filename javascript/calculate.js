@@ -7,30 +7,28 @@ function playerExpensesTotalUpdate(elementId) {
 }
 
 document.getElementById('calculate-btn').addEventListener('click', function () {
-
     const playerExpenses = document.getElementById('player-expenses');
     const playerExpensesString = playerExpenses.innerText;
     const previousExpenses = parseInt(playerExpensesString);
 
     const listContent = document.getElementById('list-content');
     const listContentString = listContent.innerText;
-    const listContentprvious = parseFloat(listContentString)
+    const listContentPrevious = parseFloat(listContentString)
+    const totalPlayerBudget = listContent.childElementCount
 
-    const totalExpenses = playerExpensesTotalUpdate('calculate-field') * listContent.childElementCount;
+    const totalExpenses = playerExpensesTotalUpdate('calculate-field') * totalPlayerBudget;
     playerExpenses.innerText = totalExpenses;
 
 })
 
 document.getElementById('total-calculate').addEventListener('click', function () {
-    const calculateField = document.getElementById('calculate-field');
-    const calculateString = calculateField.value;
-    const previousCalculate = parseInt(calculateString);
-    calculateField.value = ""
-
+    const playerExpenses = document.getElementById('player-expenses');
+    const playerExpensesString = playerExpenses.innerText;
+    const previousExpenses = parseInt(playerExpensesString);
 
     const managerCost = playerExpensesTotalUpdate('manager-cost')
     const coachCost = playerExpensesTotalUpdate('coach-cost')
-    const totalCost = managerCost + coachCost;
+    const totalCost = managerCost + coachCost + previousExpenses;
 
     const finalTotal = document.getElementById('total-calculator');
     const finalTotalString = finalTotal.innerText;
