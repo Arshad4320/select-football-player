@@ -19,7 +19,7 @@ h1.hadding-title {
 }
 
 .card-section {
-    background: #090b4d;
+    background: #0c1322;
     padding: 100px;
 }
 
@@ -28,20 +28,22 @@ h1.hadding-title {
     color: white;
 }
 
+.card-style-body {
+    background: #00000074;
+    color: white;
+}
+
 .card-style {
     padding: 30px;
 }
 
 .list ul li {
-    list-style: none;
+    list-style-type: number;
     padding-top: 26px;
 }
 
 input {
     width: 120px;
     margin-left: 20px;
-    background: none;
     border: 1px solid gray;
 }
-
-.btn {}
