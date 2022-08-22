@@ -1,4 +1,5 @@
 // click button add players name javascript code
+
 document.getElementById('player-button-one').addEventListener('click', function () {
     const listContent = document.getElementById('list-content');
     const li = document.createElement('li');
@@ -31,25 +32,12 @@ document.getElementById('player-button-five').addEventListener('click', function
     listContent.append(li);
 })
 document.getElementById('player-button-six').addEventListener('click', function () {
-    const disableButton = disableBtn('player-button-six')
     const listContent = document.getElementById('list-content');
     const li = document.createElement('li');
     li.innerText = 'Renato Sanches'
     listContent.append(li);
 
 })
-document.getElementById('player-button-six').addEventListener('click', function () {
-
-})
-const selectedPlayerList = document.getElementById('list-content');
-function disableBtn(playerID) {
-    if (selectedPlayerList.childElementCount < 5) {
-        playerID.disabled = 'true';
-        playerID.style.backgroundColor = 'white';
-        playerID.style.color = 'black';
-        playerID.innerText = "SELECTED";
-    }
-}
 
 
 
