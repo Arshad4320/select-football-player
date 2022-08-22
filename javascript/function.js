@@ -7,6 +7,7 @@ document.getElementById('player-button-one').addEventListener('click', function 
     listContent.append(li);
     addPlayerList('player-button-one')
 
+
 })
 document.getElementById('player-button-tow').addEventListener('click', function () {
     const listContent = document.getElementById('list-content');
@@ -43,7 +44,6 @@ document.getElementById('player-button-six').addEventListener('click', function 
     listContent.append(li);
     addPlayerList('player-button-six');
     disableBtn('player-button-six')
-
 })
 
 
